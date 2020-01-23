@@ -6,19 +6,26 @@ import Icon from "react-native-vector-icons/FontAwesome";
 Icon.loadFont();
 
 import Home from "./pages/Home";
-import Teste from "./pages/Teste";
+import FadeAnimation from "./pages/FadeAnimation";
+import ClickAnimation from "./pages/ClickAnimation";
 
 const mainNavigation = createDrawerNavigator({
   Home: {
     screen: Home,
     navigationOptions: () => ({
-      drawerIcon: <Icon name="lock" size={20} color="#Da552f" />
+      drawerIcon: <Icon name="lock" size={20} color="#444" />
     })
   },
-  Teste: {
-    screen: Teste,
+  FadeAnimation: {
+    screen: FadeAnimation,
     navigationOptions: () => ({
-      drawerIcon: <Icon name="rocket" size={20} color="#Da552f" />
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+  ClickAnimation: {
+    screen: ClickAnimation,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
     })
   }
 });
