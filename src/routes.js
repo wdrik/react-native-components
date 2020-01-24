@@ -10,6 +10,8 @@ import FadeAnimation from "./pages/FadeAnimation";
 import ClickAnimation from "./pages/ClickAnimation";
 import ImageComponent from "./pages/ImageComponent";
 import ActivityindicatorComponent from "./pages/ActivityindicatorComponent";
+import ButtonComponent from "./pages/ButtonComponent";
+import DatePickerIOSComponent from "./pages/DatePickerIOSComponent";
 
 const mainNavigation = createDrawerNavigator({
   Home: {
@@ -38,6 +40,18 @@ const mainNavigation = createDrawerNavigator({
   },
   ActivityindicatorComponent: {
     screen: ActivityindicatorComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+  ButtonComponent: {
+    screen: ButtonComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+  DatePickerIOSComponent: {
+    screen: DatePickerIOSComponent,
     navigationOptions: () => ({
       drawerIcon: <Icon name="rocket" size={20} color="#444" />
     })
