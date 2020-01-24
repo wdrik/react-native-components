@@ -8,6 +8,8 @@ Icon.loadFont();
 import Home from "./pages/Home";
 import FadeAnimation from "./pages/FadeAnimation";
 import ClickAnimation from "./pages/ClickAnimation";
+import ImageComponent from "./pages/ImageComponent";
+import ActivityindicatorComponent from "./pages/ActivityindicatorComponent";
 
 const mainNavigation = createDrawerNavigator({
   Home: {
@@ -24,6 +26,18 @@ const mainNavigation = createDrawerNavigator({
   },
   ClickAnimation: {
     screen: ClickAnimation,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+  ImageComponent: {
+    screen: ImageComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+  ActivityindicatorComponent: {
+    screen: ActivityindicatorComponent,
     navigationOptions: () => ({
       drawerIcon: <Icon name="rocket" size={20} color="#444" />
     })
