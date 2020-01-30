@@ -16,6 +16,13 @@ import InputAccessoryViewComponent from "./pages/InputAccessoryViewComponent";
 import MaskedViewIOS from "./pages/MaskedViewIOS";
 import ModalComponent from "./pages/ModalComponent";
 import PickerComponent from "./pages/PickerComponent";
+import RefreshControlComponent from "./pages/RefreshControlComponent";
+import SafeAreaViewComponent from "./pages/SafeAreaViewComponent";
+import ScrollViewComponent from "./pages/ScrollViewComponent";
+import SectionListComponent from "./pages/SectionListComponent";
+import SegmentedControlIOSComponent from "./pages/SegmentedControlIOSComponent";
+import SliderComponent from "./pages/SliderComponent";
+import TextInputComponent from "./pages/TextInputComponent";
 
 const mainNavigation = createDrawerNavigator({
   Home: {
@@ -90,6 +97,55 @@ const mainNavigation = createDrawerNavigator({
 
   PickerComponent: {
     screen: PickerComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+
+  RefreshControlComponent: {
+    screen: RefreshControlComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+
+  SafeAreaViewComponent: {
+    screen: SafeAreaViewComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+
+  ScrollViewComponent: {
+    screen: ScrollViewComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+
+  SectionListComponent: {
+    screen: SectionListComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+
+  SegmentedControlIOSComponent: {
+    screen: SegmentedControlIOSComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+
+  SliderComponent: {
+    screen: SliderComponent,
+    navigationOptions: () => ({
+      drawerIcon: <Icon name="rocket" size={20} color="#444" />
+    })
+  },
+
+  TextInputComponent: {
+    screen: TextInputComponent,
     navigationOptions: () => ({
       drawerIcon: <Icon name="rocket" size={20} color="#444" />
     })

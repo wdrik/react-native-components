@@ -10,11 +10,11 @@ export default function MaskedViewIOS() {
           style={styles.link}
           onPress={() => {
             Linking.openURL(
-              "https://github.com/react-native-community/react-native-masked-view"
+              "https://github.com/react-native-community/react-native-segmented-control"
             );
           }}
         >
-          react-native-community/react-native-masked-view
+          @react-native-community/react-native-segmented-control
         </Text>{" "}
         instead.
       </Text>

@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Linking } from "react-native";
 
-export default function MaskedViewIOS() {
+export default function SliderComponent() {
   return (
     <View style={styles.container}>
       <Text>
@@ -10,11 +10,11 @@ export default function MaskedViewIOS() {
           style={styles.link}
           onPress={() => {
             Linking.openURL(
-              "https://github.com/react-native-community/react-native-masked-view"
+              "https://github.com/react-native-community/react-native-slider"
             );
           }}
         >
-          react-native-community/react-native-masked-view
+          react-native-community/react-native-slider
         </Text>{" "}
         instead.
       </Text>
