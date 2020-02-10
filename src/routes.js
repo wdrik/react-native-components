@@ -28,14 +28,14 @@ const mainNavigation = createDrawerNavigator({
   Home: {
     screen: Home,
     navigationOptions: () => ({
-      drawerIcon: <Icon name="apple" size={20} color="#444" />
+      drawerIcon: <Icon name="apple-alt" size={20} color="#444" />
     })
   },
 
   FadeAnimation: {
     screen: FadeAnimation,
     navigationOptions: () => ({
-      drawerIcon: <Icon name="apple-alt" size={20} color="#444" />,
+      drawerIcon: <Icon name="apple" size={20} color="#444" />,
       headerStyle: {
         backgroundColor: "#f4511e"
       },
