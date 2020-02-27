@@ -1,23 +1,18 @@
 import React from "react";
-import { View, Text, StyleSheet, Linking } from "react-native";
+import { View, StyleSheet } from "react-native";
+
+import Slider from "@react-native-community/slider";
 
 export default function SliderComponent() {
   return (
     <View style={styles.container}>
-      <Text>
-        Deprecated. Use{" "}
-        <Text
-          style={styles.link}
-          onPress={() => {
-            Linking.openURL(
-              "https://github.com/react-native-community/react-native-slider"
-            );
-          }}
-        >
-          react-native-community/react-native-slider
-        </Text>{" "}
-        instead.
-      </Text>
+      <Slider
+        style={{ width: 200, height: 40 }}
+        minimumValue={0}
+        maximumValue={1}
+        minimumTrackTintColor="#FFFFFF"
+        maximumTrackTintColor="#000000"
+      />
     </View>
   );
 }
@@ -29,10 +24,5 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#EBEBEB",
     padding: 20
-  },
-
-  link: {
-    fontWeight: "bold",
-    textDecorationLine: "underline"
   }
 });

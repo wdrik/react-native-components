@@ -18,6 +18,11 @@ export default function TextInputComponent() {
           autoCompleteType="off" // --> enum('off', 'username', 'password', 'email', 'name', 'tel', 'street-address', 'postal-code', 'cc-number', 'cc-csc', 'cc-exp', 'cc-exp-month', 'cc-exp-year') / (Required: no)
           autoCorrect={true} // --> Bool / (default: true) / (Required: no)
           autoFocus={true} // --> Bool / (default: false) / (Required: no)
+          blurOnSubmit={false} // --> Bool / (default: true for single-line fields and false for multiline fields) / (Required: no)
+          caretHidden={true} // --> Bool / (default: false) / (Required: no)
+          clearButtonMode="never" // --> enum('never', 'while-editing', 'unless-editing', 'always') / (default: 'never') / (Required: no) / (Platform : iOS)
+          clearTextOnFocus={true} // --> Bool / (default: false) / (Required: no) / (Platform : iOS)
+          contextMenuHidden={true} // --> Bool / (default: false) / (Required: no)
         />
       </View>
     </SafeAreaView>
